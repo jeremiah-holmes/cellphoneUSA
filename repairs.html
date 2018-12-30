@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<style>
+
+  html{
+
+}
+.repair{
+  height: 60vh;
+}
+
+</style>
+<body onload="startTime()">
+  <div class="header">
+    <h1>Cellphone USA LLC</h1>
+    <img class="logo" src="/image/cpusa.png">
+
+    <h1>1212 Main St.Maryville, MO</h1>
+
+  </div>
+
+<div class="mid">
+  <h2>BUY SELL TRADE</h2>
+  <h2>Smartphones, Tablets, PCs,</h2>
+  <h2>Video Games and more</h2>
+  <div class="repair">
+  <center>
+    <form action="rsvp.php" method="post">
+      <h2>  Name: <input type="text" name="name"></h2>
+      <h2>  Phone Number: <input type="text" name="pNumber"></h2>
+      <h2>  Device: <input type="text" name="device"></h2>
+      <h2>  Repair: <input type="text" name="repair"></h2>
+<input type="submit" value"Submit Request">
+
+  </center>
+    </div>
+</div>
+<a href="tel:16605280523">
+  <div class="footer">
+  <h2>
+    <div id="txt"></div>
+    <div class="number">660-528-0523</div>
+  </h2>
+  </div>
+</a>
+
+</body>
+
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</html>
