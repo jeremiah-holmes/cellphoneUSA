@@ -14,6 +14,10 @@
 .repair{
   height: 60vh;
 }
+.repair input{
+  margin-bottom: 3vh;
+  border-radius: 6px;
+}
 
 </style>
 <body onload="startTime()">
@@ -29,15 +33,20 @@
   <h2>BUY SELL TRADE</h2>
   <h2>Smartphones, Tablets, PCs,</h2>
   <h2>Video Games and more</h2>
+
   <div class="repair">
   <center>
     <form action="rsvp.php" method="post">
-      <h2>  Name: <input type="text" name="name"></h2>
-      <h2>  Phone Number: <input type="text" name="pNumber"></h2>
-      <h2>  Device: <input type="text" name="device"></h2>
-      <h2>  Repair: <input type="text" name="repair"></h2>
-<input type="submit" value"Submit Request">
-
+      <h2>  Name: </h2>
+      <input type="text" name="name">
+      <h2>  Phone Number: </h2>
+      <input type="text" name="pNumber">
+      <h2>  Device: </h2>
+      <input type="text" name="device">
+      <h2>  Repair: </h2>
+      <input type="text" name="repair"><br>
+      <input type="submit" value"Submit Request">
+    </form>
   </center>
     </div>
 </div>
