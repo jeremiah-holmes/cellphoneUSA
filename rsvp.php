@@ -8,7 +8,7 @@
      $repair = filter_input(INPUT_POST, 'repair');
 
 
-     $subject = "NewRepair - ";
+     $subject = "New Repair - ";
      $today = date("M,d,Y h:i:s A");
      $txt = $today." ".$name." ".$pNumber." ".$device." ".$repair."\n";
 
